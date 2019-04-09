@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar slot="fixed" #search></ion-searchbar>
+  <ion-virtual-scroll [items]="items" >
+    <ion-item *virtualItem="let item">
+      {{ item._id }}
+    </ion-item>
+  </ion-virtual-scroll>
+</ion-content>
